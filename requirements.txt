@@ -1,0 +1,9 @@
+requests
+pandas
+numpy
+psycopg2-binary
+python-dotenv
+scikit-learn
+sentence-transformers
+streamlit
+plotly
