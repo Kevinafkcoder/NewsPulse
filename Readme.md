@@ -1,7 +1,7 @@
 # 📰 NewsPulse
 ### Online News Topic Detection and Trend Analysis
 
-NewsPulse is an NLP-based application that automatically collects news articles, discovers meaningful topics, and analyses how news coverage changes over time.
+NewsPulse is a Web Content Mining application that uses Natural Language Processing and machine learning to automatically collect online news articles, discover meaningful topics and analyse how news coverage changes over time.
 
 ## 🎯 Objectives
 - Automatically collect news articles from multiple categories.
@@ -14,7 +14,7 @@ NewsPulse is an NLP-based application that automatically collects news articles,
 ## 🛠️ Technologies Used
 
 | Technology | Purpose |
-|---|---|
+|---|---| 
 | Python | Core development |
 | Streamlit | Interactive dashboard |
 | PostgreSQL | Article and topic storage |
@@ -121,14 +121,20 @@ NewsPulse/
 
 NewsPulse compares article coverage across two equal three-day windows:
 
-- Recent period: Latest three days.
-- Previous period: Three days preceding the recent period.
+- **Recent period:** Latest three days.
+- **Previous period:** Three days immediately preceding the recent period.
 
-Topics are classified as Emerging, Rising, Declining, Stable or Insufficient Data based on article counts and changes in topic share.
+Topics are classified based on changes in article counts and topic share:
+
+- **Emerging:** No articles for the topic in the previous period, but articles in the recent period.
+- **Rising:** Topic share increases by at least 5 percentage points.
+- **Declining:** Topic share decreases by at least 5 percentage points.
+- **Stable:** Topic share changes by less than 5 percentage points.
+- **Insufficient Data:** Not enough historical or recent articles for comparison.
 
 ## 🎓 Project Information
 
 **Project:** NewsPulse – Online News Topic Detection and Trend Analysis  
-**Domain:** Natural Language Processing (NLP)  
+**Domain:** Web Content Mining
 **Application:** News analytics and topic discovery
 
