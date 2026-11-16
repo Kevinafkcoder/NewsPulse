@@ -3,13 +3,14 @@
 
 NewsPulse is a Web Content Mining application that uses Natural Language Processing and machine learning to automatically collect online news articles, discover meaningful topics and analyse how news coverage changes over time.
 
-## 🎯 Objectives
-- Automatically collect news articles from multiple categories.
-- Identify similar articles using semantic similarity.
-- Discover news topics through clustering.
-- Identify representative articles and important keywords.
-- Analyse topic popularity and emerging trends.
-- Allow users to search, filter and explore news articles.
+## Objectives
+
+- Collect news articles from different categories.
+- Find similar news articles.
+- Group articles into topics.
+- Extract key keywords and representative articles.
+- Track popular and emerging news topics.
+- Provide options to search, filter and explore articles.
 
 ## 🛠️ Technologies Used
 
